@@ -89,8 +89,8 @@ repository: "https://github.com/your-username/my-project"
 targets:
   - gemini
   - claude
-  # - copilot
-  # - codex
+  - copilot
+  - codex
   # - cursor
 
 dependencies:

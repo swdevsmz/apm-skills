@@ -1,2 +1,9 @@
 name: apm-skills
 version: 0.1.0
+description: "AIエージェント（Gemini, Claude, Copilot等）で共有可能な、標準化された社内Skillセットのリポジトリです。"
+repository: "https://github.com/swdevsmz/apm-skills"
+license: "MIT"
+
+targets:
+  - gemini
+  - claude

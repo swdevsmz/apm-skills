@@ -81,20 +81,24 @@ apm --version
 ```yaml
 name: my-project
 version: 0.1.0
+description: "プロジェクトの説明"
+repository: "https://github.com/your-username/my-project"
 
 # 配置先クライアントを明示。自動検出に頼らず固定するのが推奨運用。
-# 利用しているクライアントだけ列挙すればよい (例: claude のみ、claude + copilot など)。
+# 利用しているクライアントだけ列挙すればよい (例: geminiのみ、gemini + claude など)。
 targets:
+  - gemini
   - claude
   # - copilot
   # - codex
+  # - cursor
 
 dependencies:
   apm:
-    # 特定のSkillだけ取り込む場合
-    # t3g600w200oi/apm-skills/.apm/skills/code-review#0.1.0
+    # 特定のSkillだけ取り込む場合（<your-username> はご自身のGitHub IDに書き換えてください）
+    # <your-username>/apm-skills/.apm/skills/code-review#0.1.0
     # またはパッケージ全体を取り込む
-    - t3g600w200oi/apm-skills#0.1.0
+    - <your-username>/apm-skills#0.1.0
 ```
 
 ### 2. インストール
